@@ -21,14 +21,14 @@ document.body.appendChild(renderer.domElement);
 
 // Add a polygon to the scene
 const geometry = new THREE.CylinderGeometry( 1, 1, 3, 20 );
-const material = new THREE.MeshStandardMaterial({ color: 0x4e5e50 });
+const material = new THREE.MeshStandardMaterial({ color: 0x3e7e55 });
 const cylinder = new THREE.Mesh(geometry, material);
 scene.add(cylinder);
 
 
 
 // add wireframe to shape
-const matLineBasic = new THREE.LineBasicMaterial({ color: 0x2e8e99 });
+const matLineBasic = new THREE.LineBasicMaterial({ color: 0x3e7e55 });
 const wireframe = new THREE.WireframeGeometry(geometry);
 const line = new THREE.LineSegments(wireframe, matLineBasic);
 line.material.depthTest = false;
